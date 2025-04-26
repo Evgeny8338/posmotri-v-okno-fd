@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+ul,
+ol {
+  list-style: none;
+}
+
 html {
   block-size: 100%;
 }
@@ -47,7 +52,7 @@ fieldset {
   grid-area: result;
   display: flex;
   flex-direction: column;
-  gap: 19px;
+  gap: 16px;
 }
 
 .result__video-container {
@@ -83,7 +88,7 @@ fieldset {
 
 .search-form__fieldset-title {
   font-family: "Fira Sans Condensed", sans-serif;
-  font-size: 18px;
+  font-size: 1em;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -94,7 +99,7 @@ fieldset {
   height: 27px;
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1em;
   font-style: normal;
   line-height: normal;
   color: inherit;
@@ -117,6 +122,7 @@ fieldset {
 .search-form__textfield:hover {
   cursor: text;
 }
+
 .search-form__textfield:active {
   outline: 1px solid #fff;
 }
@@ -124,7 +130,7 @@ fieldset {
 .search-form__textfield::placeholder {
   color: rgba(255, 255, 255, 0.7);
   font-family: "Fira Sans Condensed", sans-serif;
-  font-size: 18px;
+  font-size: 1em;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -183,7 +189,7 @@ fieldset {
   height: 34px;
   text-align: center;
   font-family: "Fira Sans Condensed", sans-serif;
-  font-size: 18px;
+  font-size: 1em;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -221,7 +227,7 @@ fieldset {
   display: flex;
   flex-direction: column;
   align-self: start;
-  gap: 26px;
+  gap: 20px;
 }
 
 .title {
@@ -239,6 +245,7 @@ fieldset {
 }
 
 .content__list-container {
+  position: relative;
   height: 298px;
   overflow: auto;
 }
@@ -271,7 +278,7 @@ fieldset {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .content__card-link_current {
@@ -303,14 +310,14 @@ fieldset {
 
 .content__video-card-description {
   font-family: "Fira Sans Condensed", sans-serif;
-  font-size: 18px;
+  font-size: 1em;
   font-style: normal;
   font-weight: 400;
-  line-height: 10px;
+  line-height: 16.2px;
 }
 
 .content__video-card-thumbnail {
-  width: 196px;
+  width: 195px;
   height: 103px;
   object-position: center;
   background-size: cover;
@@ -319,11 +326,6 @@ fieldset {
 .more-button {
   width: 390px;
   margin-bottom: 1px;
-}
-
-ul,
-ol {
-  list-style: none;
 }
 
 .custom-scrollbar::-webkit-scrollbar {
